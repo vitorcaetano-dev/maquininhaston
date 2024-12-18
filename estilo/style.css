@@ -9,10 +9,14 @@ esse e a versão para mobile*/
     margin: 0px;
     padding: 0px ;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 body {
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
+    margin: 0px auto;
+    overflow-x: hidden;
+    
 }
 i {
     
@@ -29,7 +33,7 @@ div.logo > img {
     display: block;
     position: absolute;
     top: 0px;
-    left:88%;
+    left:87%;
     width:45px;
     height:45px;
 }
@@ -38,10 +42,8 @@ div.logo > img {
     clear: both;
 }
 
-header {
-    background-color:#ffffff;
    
-}
+
 header > h1, header > p {
     text-align: center;
     font-variant: small-caps;
@@ -64,12 +66,45 @@ header > button {
     
     border-radius: 12px;
 }
-
-table {
-    border: 1px solid #00c100;
-    margin-top: 10px;
-    padding: 10px;
+section#produtos {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom: 16px;
+    
 }
-tr {
-    padding-top: 5px;
+div.maquininha {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 13px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.375);
+}
+div.maquininha > button.compra {
+    background-color: #00ff00;
+    color: white;
+    border: 0px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.421);
+}
+div.maquininha > button.compra:hover {
+    background-color: #00c100;
+    box-shadow:  4px 0px 10px rgba(0, 0, 0, 0.421);
+}
+div.maquininha > ul {
+    list-style: none;
+    text-align: left;
+    line-height: 26px;
+}
+
+button.info {
+    font-size: 16px;
+    padding: 2px;
 }
