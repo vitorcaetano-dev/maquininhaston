@@ -10,24 +10,36 @@ esse e a versão para mobile*/
     padding: 0px ;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+}
 i {
     
     padding: 10px;
     margin: 0px auto
 }
 div.logo {
-    margin-left: 76vw;
-   
-    display: inline-block;
+   padding: 0px;
+   margin: 0px ;
+    
 
 }
 div.logo > img {
-    
-    width: 38px;
-    padding-top:10px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left:91%;
+    width:45px;
+    height:45px;
 }
+
+.clear {
+    clear: both;
+}
+
 header {
-    background-color:#00ff0068;
+    background-color:#ffffff;
    
 }
 header > h1, header > p {
@@ -52,17 +64,28 @@ header > button {
     
     border-radius: 12px;
 }
+
+
 section.ben > div {
-    display: block;
-    margin: 0px auto;     
-   
+    margin: 0px auto;
+    
+    display:block;
+    max-width: 433px;
+    
+    
 }
 main > section > div > ul > li {
     font-variant: small-caps;
     display: inline-block;
     margin: 10px 30px 0px 30px;
     width: 150px;
+    font-size: 0.7em;
+    padding-bottom: 5px;
     text-align: justify;
     list-style: none;
-    background-color: azure;
+    
+}
+
+li.left {
+    float: left;
 }
