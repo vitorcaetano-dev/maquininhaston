@@ -29,7 +29,7 @@ div.logo > img {
     display: block;
     position: absolute;
     top: 0px;
-    left:91%;
+    left:88%;
     width:45px;
     height:45px;
 }
@@ -65,27 +65,11 @@ header > button {
     border-radius: 12px;
 }
 
-
-section.ben > div {
-    margin: 0px auto;
-    
-    display:block;
-    max-width: 433px;
-    
-    
+table {
+    border: 1px solid #00c100;
+    margin-top: 10px;
+    padding: 10px;
 }
-main > section > div > ul > li {
-    font-variant: small-caps;
-    display: inline-block;
-    margin: 10px 30px 0px 30px;
-    width: 150px;
-    font-size: 0.7em;
-    padding-bottom: 5px;
-    text-align: justify;
-    list-style: none;
-    
-}
-
-li.left {
-    float: left;
+tr {
+    padding-top: 5px;
 }
