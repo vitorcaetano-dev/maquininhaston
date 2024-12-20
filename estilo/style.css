@@ -87,7 +87,14 @@ section#produtos {
     width: 80%;
     margin: 0px auto;
     padding-bottom: 16px;
+
     
+}
+
+section#produtos > h1 {
+    font-weight: bolder;
+    padding: 10px;
+    font-variant: small-caps;
 }
 article#artflex {
     
@@ -171,12 +178,14 @@ div.vermais > ul > li > P {
 
 
 table.center {
+    margin: 0px auto;
     margin-top: 30px;
     border-collapse: collapse;
     overflow: scroll;
 }
 td, th {
     border: 1px solid black;
+    padding: 5px;
 }
 table tr:nth-child(even) {
     background-color: lightgray;
