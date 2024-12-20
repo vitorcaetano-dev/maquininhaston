@@ -29,7 +29,7 @@ div#logomenu{
     
 }
 i#burguer{
-    
+    cursor: pointer;
     padding: 10px;
     margin: 0px auto
 }
@@ -39,9 +39,15 @@ i#burguer{
     width:45px;
     height:45px;
 }
+#imenu {
+    display: none;
 
-
-   
+}
+  header {
+     max-width: 450px;
+     margin: 0px auto;
+  }
+  
 
 header > h1, header > p {
     text-align: center;
@@ -51,9 +57,12 @@ header > h1, header > p {
 header > img {
    padding-top: 5px;
    margin: 0px auto;
-   width: 94vw;
+   width: 90%;
+   display: block;
+   
 }
 header > button {
+    cursor: pointer;
     display: block;
     background-color: #00c100;
     border: 0px;
@@ -62,8 +71,16 @@ header > button {
     font-size:22px;
     font-weight: bolder;
     margin: 0px auto;
-    
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.397) ;
     border-radius: 12px;
+}
+
+header > button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+
+    box-shadow: none;
 }
 section#produtos {
     text-align: center;
@@ -72,14 +89,29 @@ section#produtos {
     padding-bottom: 16px;
     
 }
+article#artflex {
+    
+    justify-content: space-around;
+    justify-items:space-evenly;
+    align-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-start;
+    
+}
 div.maquininha {
-    width: 80%;
+    
+    max-width: 400px;
+    flex-basis: 300px;
     padding: 10px;
     margin: 0px auto;
     text-align: center;
     border: 1px solid grey;
     border-radius: 13px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.375);
+}
+div.maquininha > img {
+    width: 20%;
 }
 div.maquininha  s {
     color: grey;
@@ -88,7 +120,8 @@ div.maquininha  s {
 }
 div.maquininha h2 {
     color: #00ff00;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
     padding: 5px;
     
 }
@@ -98,7 +131,7 @@ div.maquininha > button.compra {
     border: 0px;
     margin: 10px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 23px;
     padding: 5px;
     font-variant: small-caps;
     font-weight: bold;
@@ -106,7 +139,6 @@ div.maquininha > button.compra {
 }
 div.maquininha > button.compra:hover {
     background-color: #ff8f33;
-    box-shadow:  4px 0px 10px rgba(0, 0, 0, 0.421);
 }
 div.maquininha > ul {
     list-style: none;
@@ -120,6 +152,7 @@ button.info {
     font-size: 16px;
     padding: 2px;
     margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 div.vermais {
@@ -133,4 +166,18 @@ div.vermais li {
 }
 div.vermais > ul > li > P {
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+table.center {
+    margin-top: 30px;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+td, th {
+    border: 1px solid black;
+}
+table tr:nth-child(even) {
+    background-color: lightgray;
 }

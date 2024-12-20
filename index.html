@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="estilo/style.css" media="all">
 
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
    
 </head>
 <body>
     <div id="logomenu">
     
-         <div><i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i></div>
+         <div><i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="imenu">
+            <button onclick="taxa()">ver taxas</button>
+            <button>garantias</button>
+            <button>codigos promocionais</button>
+            <button>fale conosco</button>
+            
+        
+        </menu>
+
+        </div>
 
          <div><img class="logo" src="imagens/on-logo.png" alt="logo ton"></div>
     
@@ -23,7 +34,7 @@
         <h1>maquininhas ton</h1>
         <p>ate 50% de desconto nas maquininhas</p>
         <img src="imagens/banner1.webp" alt="banner ton">
-        <button>PEÇA JÁ SUA MAQUININHA!</button>
+        <button onclick="scrollIntoSection()">PEÇA JÁ SUA MAQUININHA!</button>
     </header>
     
      
@@ -32,66 +43,231 @@
         <section id="produtos">
             <h3>descubra as melhores maquininhas pra sua empresa</h3>
             <p>taxa ZERO no pix qr code nos primeiros 30 dias</p>
+            <h1>conferira a linha T3</h1>
         </section>
+      
        
-<article>
+<article id="artflex">
     
     
-            <div class="maquininha">
+    <div class="maquininha">
     
-                <h1>T3 SMART TON PRO</h1>
-    
-    
-    
-                <img  src="produtos/maquininhat3.png" >
-    
-                <h1>12x R$ 21,15</h1>
-    
-                <p>ou à vista por </p>
-    
-                <h3><s>R$ 564,00</s></h3>
-    
-                <h2>R$ 253,00</h2>
-                <h4>frete gratis em todo brasil, receba no mesmo dia</h4>
-                <button class="compra">PEDIR T3 SMART PRO</button>
-                
-                <ul>
-                    <li> pix com qr code na maquininha</li>
-    
-                    <li>sistema android com tela touch</li>
-    
-                    <li>vem com chip 4G, Wi-Fi e Bluetooth</li>
+        <h1>T3 SMART TON PRO</h1>
 
-                    <button class="info" onclick="clickInfo()">ver mais informações</button>
-                  <div class="vermais" id="iinfo">
-                      
-                      <ul>
-                          <li>a caixa ira conter, maquininha ton t3 smart pro, 5 bobinas para recibos, bobina extra ja instalada, cabo USB para carregamento e manual de instruções </li>
-                          <li>receba por aproximação (NFC)</li>
-                          <li>imprime comprovante</li>
-                          <li>maquininha sem aluguel</li>
-                          <li>garantia ilimitada</li>
-                          <li>link pagamento parcelado</li>
-                          <li>receba suas vendas em um dia útil</li>
-                          <li>bateria de longa duração</li>
 
-                          <li><p>A maquininha T3 Smart Pro é perfeita para quem busca praticidade e eficiência nas vendas. Com tecnologia NFC para pagamentos por aproximação, impressão de comprovantes, e a vantagem de não ter aluguel, ela oferece tudo o que você precisa. Além disso, conta com garantia ilimitada, opção de link de pagamento parcelado, e rapidez de recebimento de suas vendas em apenas um dia útil. Sua bateria de longa duração garante que você possa vender</p></li>
-                      </ul>
-                  </div>
+
+        <img  src="produtos/maquininhat3.png" >
+
+        <h1>12x R$ 21,15</h1>
+
+        <p>ou à vista por </p>
+
+        <h3><s>R$ 564,00</s></h3>
+
+        <h2>R$ 253,00</h2>
+        <h4>frete gratis em todo brasil,
+            <i class="material-symbols-outlined">delivery_truck_bolt</i>
+        </h4>
+        <button class="compra">PEDIR T3 SMART PRO</button>
+        
+        <ul>
+            <li> <i class="material-symbols-outlined">qr_code_2</i> pix com qr code na maquininha</li>
+
+            <li><i class="material-symbols-outlined">touch_app</i>sistema android com tela touch</li>
+
+            <li><i class="material-symbols-outlined">wifi</i>vem com chip 4G, Wi-Fi e Bluetooth</li>
+
+            <button class="info" onclick="clickInfo()">ver mais informações</button>
+          <div class="vermais" id="iinfo">
+              
+              <ul>
+                  <li>a caixa ira conter, maquininha ton t3 smart pro, 5 bobinas para recibos, bobina extra ja instalada, cabo USB para carregamento e manual de instruções </li>
+                  <li><i class="material-symbols-outlined">nfc</i> receba por aproximação (NFC)</li>
+                  <li><i class="material-symbols-outlined">receipt_long</i> imprime comprovante</li>
+                  <li><i class="material-symbols-outlined">check_circle</i> maquininha sem aluguel</li>
+                  <li><i class="material-symbols-outlined">license</i>garantia ilimitada</li>
+                  <li><i class="material-symbols-outlined">attachment</i>link pagamento parcelado</li>
+                  <li><i class="material-symbols-outlined">clear_day</i>receba suas vendas em um dia útil</li>
+                  <li><i class="material-symbols-outlined">battery_full</i>bateria de longa duração</li>
+
+                  <li><p>A maquininha T3 Smart Pro é perfeita para quem busca praticidade e eficiência nas vendas. Com tecnologia NFC para pagamentos por aproximação, impressão de comprovantes, e a vantagem de não ter aluguel, ela oferece tudo o que você precisa. Além disso, conta com garantia ilimitada, opção de link de pagamento parcelado, e rapidez de recebimento de suas vendas em apenas um dia útil. Sua bateria de longa duração garante que você possa vender</p></li>
+              </ul>
+          </div>
+
+        </ul>
+
+        
+
+    </div>
+
     
-                </ul>
+    <div class="maquininha">
     
-                
-    
-            </div>
-    
+        <h1>T3 TON PRO</h1>
+
+
+
+        <img  src="produtos/maquininhat3.png" >
+
+        <h1>12x R$ 19,99</h1>
+
+        <p>ou à vista por </p>
+
+        <h3><s>R$ 564,00</s></h3>
+
+        <h2>R$ 239,90</h2>
+        <h4>frete gratis em todo brasil,
+            <i class="material-symbols-outlined">delivery_truck_bolt</i>
+        </h4>
+        <button class="compra">PEDIR T3 PRO</button>
+        
+        <ul>
+            <li> <i class="material-symbols-outlined">qr_code_2</i> pix com qr code na maquininha</li>
+
+            <li><i class="material-symbols-outlined">receipt_long</i> imprime comprovante</li>
+
+            <li><i class="material-symbols-outlined">wifi</i>vem com chip 4G, Wi-Fi e Bluetooth</li>
+
+            <button class="info" onclick="clickInfo2()">ver mais informações</button>
+          <div class="vermais" id="iinfo2">
+              
+              <ul>
+                  <li>a caixa ira conter, maquininha ton t3 pro, 5 bobinas para recibos, bobina extra ja instalada, cabo USB para carregamento e manual de instruções </li>
+                  <li><i class="material-symbols-outlined">nfc</i> receba por aproximação (NFC)</li>
+                 
+                  <li><i class="material-symbols-outlined">check_circle</i> maquininha sem aluguel</li>
+                  <li><i class="material-symbols-outlined">license</i>garantia ilimitada</li>
+                  <li><i class="material-symbols-outlined">attachment</i>link pagamento parcelado</li>
+                  <li><i class="material-symbols-outlined">clear_day</i>receba suas vendas em um dia útil</li>
+                  
+
+                  <li><p>A maquininha T3 Smart Pro é perfeita para quem busca praticidade e eficiência nas vendas. Com tecnologia NFC para pagamentos por aproximação, impressão de comprovantes, e a vantagem de não ter aluguel, ela oferece tudo o que você precisa. Além disso, conta com garantia ilimitada, opção de link de pagamento parcelado, e rapidez de recebimento de suas vendas em apenas um dia útil. Sua bateria de longa duração garante que você possa vender</p></li>
+              </ul>
+          </div>
+
+        </ul>
+
+        
+
+    </div>
+ 
 </article>
+<table class="center" id="itaxa">
+     
+    <thead>
+      
+        <tr></tr>
+        <tr>
+            <td><strong>Tarifa por tipo de transação em 1 dia útil</strong></td>
+            <td><strong>Faturamento acima de R$ 2.000,00</strong></td>
+            <td><strong>Faturamento até R$ 2.000,00</strong></td>
+        </tr>
+    </thead>
+    <tbody> 
+        
+        <tr>
+            <td><strong>Débito</strong></td>
+            <td>1.36%</td>
+            <td>1.69%</td>
+        </tr>
+        <tr>
+            <td><strong>Crédito à Vista</strong></td>
+            <td>3.14%</td>
+            <td>3.49%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 2x</strong></td>
+            <td>5.63%</td>
+            <td>8.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 3x</strong></td>
+            <td>6.19%</td>
+            <td>10.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 4x</strong></td>
+            <td>6.99%</td>
+            <td>11.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 5x</strong></td>
+            <td>7.99%</td>
+            <td>12.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 6x</strong></td>
+            <td>8.99%</td>
+            <td>13.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 7x</strong></td>
+            <td>9.59%</td>
+            <td>14.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 8x</strong></td>
+            <td>9.99%</td>
+            <td>15.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 9x</strong></td>
+            <td>10.99%</td>
+            <td>16.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 10x</strong></td>
+            <td>11.49%</td>
+            <td>17.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 11x</strong></td>
+            <td>12.35%</td>
+            <td>17.99%</td>
+        </tr>
+        <tr>
+            <td><strong>Parcelado em 12x</strong></td>
+            <td>12.39%</td>
+            <td>17.99%</td>
+        </tr>
+    </tbody>
+</table>
 <script>
+    function scrollIntoSection() {
+        const artflex = document.getElementById('artflex');
+        artflex.scrollIntoView ({behavior: 'smooth'});
+    }
+
+    
+    function taxa() {
+        const artflex = document.getElementById('itaxa');
+        itaxa.scrollIntoView ({behavior: 'smooth'});
+    }
+
+
+
+       function clickMenu() {
+        if (imenu.style.display == 'block') {
+            imenu.style.display = 'none'
+        } else {
+            imenu.style.display = 'block'
+        }
+
+    }
+
     function clickInfo() {
         if (iinfo.style.display == 'block') {
             iinfo.style.display = 'none'
         } else {
             iinfo.style.display = 'block'
+        }
+
+    }
+    function clickInfo2() {
+        if (iinfo2.style.display == 'block') {
+            iinfo2.style.display = 'none'
+        } else {
+            iinfo2.style.display = 'block'
         }
 
     }
