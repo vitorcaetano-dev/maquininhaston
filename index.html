@@ -11,10 +11,14 @@
    
 </head>
 <body>
-     <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-     <div class="logo" ><img  src="imagens/on-logo.png" alt="logo ton"></div>
-     
-     <div class="clear"></div>
+    <div id="logomenu">
+    
+         <div><i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i></div>
+
+         <div><img class="logo" src="imagens/on-logo.png" alt="logo ton"></div>
+    
+</div>
+    
     <header>
         <h1>maquininhas ton</h1>
         <p>ate 50% de desconto nas maquininhas</p>
@@ -30,52 +34,67 @@
             <p>taxa ZERO no pix qr code nos primeiros 30 dias</p>
         </section>
        
-
-
-        <div class="maquininha">
-
-            <h1>T3 SMART TON PRO</h1>
-
-            
-
-            <img  src="produtos/maquininhat3.png" >
-
-            <h1>12x R$ 21,15</h1>
-
-            <p>ou à vista por </p>
-
-            <h2><s>R$ 564,00</s></h2>
-
-            <h2>R$ 253,00</h2>
-
-            <button class="compra">PEDIR T3 SMART PRO</button>
-            <h4>frete gratis em todo brasil, receba no mesmo dia</h4>
-            <ul>
-                <li> pix com qr code na maquininha</li>
-                
-                <li>sistema android com tela touch</li>
-
-                <li>vem com chip 4G, Wi-Fi e Bluetooth</li>
-
-                <li>receba por aproximação (NFC)</li>
-
-                <li>imprime comprovante</li>
-
-                <li>maquininha sem aluguel</li>
-
-                <li>garantia ilimitada</li>
-
-                <li>link pagamento parcelado</li>
-
-                <li>receba suas vendas em um dia útil</li>
-
-                <li>bateria de longa duração</li>
-
-            </ul>
-
-            <button class="info">ver mais informações</button>
-
-        </div>
+<article>
     
+    
+            <div class="maquininha">
+    
+                <h1>T3 SMART TON PRO</h1>
+    
+    
+    
+                <img  src="produtos/maquininhat3.png" >
+    
+                <h1>12x R$ 21,15</h1>
+    
+                <p>ou à vista por </p>
+    
+                <h3><s>R$ 564,00</s></h3>
+    
+                <h2>R$ 253,00</h2>
+                <h4>frete gratis em todo brasil, receba no mesmo dia</h4>
+                <button class="compra">PEDIR T3 SMART PRO</button>
+                
+                <ul>
+                    <li> pix com qr code na maquininha</li>
+    
+                    <li>sistema android com tela touch</li>
+    
+                    <li>vem com chip 4G, Wi-Fi e Bluetooth</li>
+
+                    <button class="info" onclick="clickInfo()">ver mais informações</button>
+                  <div class="vermais" id="iinfo">
+                      
+                      <ul>
+                          <li>a caixa ira conter, maquininha ton t3 smart pro, 5 bobinas para recibos, bobina extra ja instalada, cabo USB para carregamento e manual de instruções </li>
+                          <li>receba por aproximação (NFC)</li>
+                          <li>imprime comprovante</li>
+                          <li>maquininha sem aluguel</li>
+                          <li>garantia ilimitada</li>
+                          <li>link pagamento parcelado</li>
+                          <li>receba suas vendas em um dia útil</li>
+                          <li>bateria de longa duração</li>
+
+                          <li><p>A maquininha T3 Smart Pro é perfeita para quem busca praticidade e eficiência nas vendas. Com tecnologia NFC para pagamentos por aproximação, impressão de comprovantes, e a vantagem de não ter aluguel, ela oferece tudo o que você precisa. Além disso, conta com garantia ilimitada, opção de link de pagamento parcelado, e rapidez de recebimento de suas vendas em apenas um dia útil. Sua bateria de longa duração garante que você possa vender</p></li>
+                      </ul>
+                  </div>
+    
+                </ul>
+    
+                
+    
+            </div>
+    
+</article>
+<script>
+    function clickInfo() {
+        if (iinfo.style.display == 'block') {
+            iinfo.style.display = 'none'
+        } else {
+            iinfo.style.display = 'block'
+        }
+
+    }
+</script>
 </body>
 </html>
