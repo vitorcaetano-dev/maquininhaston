@@ -12,7 +12,7 @@ esse e a versão para mobile*/
     box-sizing: border-box;
 }
 body {
-    width: 97vw;
+    width: 99vw;
     height: 100vh;
     margin: 0px auto;
     overflow-x: hidden;
@@ -73,6 +73,7 @@ header > button {
     margin: 0px auto;
     box-shadow:3px 3px 8px rgba(0, 0, 0, 0.397) ;
     border-radius: 12px;
+   
 }
 
 header > button:hover {
@@ -98,6 +99,7 @@ section#produtos > h1 {
 }
 article#artflex {
     
+    width: 97vw;
     justify-content: space-around;
     justify-items:space-evenly;
     align-content: space-around;
@@ -133,6 +135,7 @@ div.maquininha h2 {
     
 }
 div.maquininha > button.compra {
+    cursor: pointer;
     background-color: #ff6f00;
     color: white;
     border: 0px;
@@ -160,6 +163,7 @@ button.info {
     padding: 2px;
     margin: 0px auto;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 div.vermais {
