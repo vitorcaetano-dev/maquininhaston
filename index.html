@@ -3,13 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TON maquininha</title>
+    <title>TON maquininha Pro</title>
     <link rel="shortcut icon" href="imagens/on-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css" media="all">
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2047428009093799');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2047428009093799&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
    
 </head>
 <body>
@@ -18,7 +36,8 @@
          <div><i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
         <menu id="imenu">
             <button onclick="taxa()">ver taxas</button>
-            <a href="https://ajuda.ton.com.br/m%C3%A1quina/prazo-de-garantia" target="_blank"><button>garantias</button></a>
+
+            <button><a href="https://ajuda.ton.com.br/m%C3%A1quina/prazo-de-garantia">garantias</a></button></a>
             
             <button>fale conosco</button>
             
@@ -45,6 +64,7 @@
             <h3>descubra as melhores maquininhas pra sua empresa</h3>
             <p>taxa ZERO no pix qr code nos primeiros 30 dias</p>
             <h1>confira a linha Ton Pro</h1>
+            <p>por causa da <strong>parceria ton</strong> todos os produtos abaixo estão em <strong>promoção por tempo limitado</strong></p>
         </section>
       
        
@@ -69,7 +89,7 @@
         <h4>frete gratis em todo brasil,
             <i class="material-symbols-outlined">delivery_truck_bolt</i>
         </h4>
-        <button class="compra">PEDIR T3 SMART PRO</button>
+        <a href="https://ton.com.br/checkout/cart/?productId=TONPRO_TIER_NOV24_SMART_POS&referrer=19D2F868-A433-44F2-9745-1A366B6C66B0&userAnticipation=0&userTag=tonpro_tier_nov24&utm_medium=invite_share&utm_source=revendedor" target="_blank"><button class="compra">PEDIR T3 SMART PRO</button></a>
         
         <ul>
             <i class="material-symbols-outlined">check_circle</i> maquininha sem aluguel</li>
@@ -128,7 +148,7 @@
         <h4>frete gratis em todo brasil,
             <i class="material-symbols-outlined">delivery_truck_bolt</i>
         </h4>
-        <button class="compra">PEDIR T3 PRO</button>
+        <a href="https://ton.com.br/checkout/cart/?productId=TONPRO_TIER_NOV24_S920&referrer=19D2F868-A433-44F2-9745-1A366B6C66B0&userAnticipation=0&userTag=tonpro_tier_nov24&utm_medium=invite_share&utm_source=revendedor" target="_blank"><button class="compra">PEDIR T3 PRO</button></a>
         
         <ul>
            
@@ -186,7 +206,7 @@
         <h4>frete gratis em todo brasil,
             <i class="material-symbols-outlined">delivery_truck_bolt</i>
         </h4>
-        <button class="compra">PEDIR T2 PRO</button>
+        <a href="https://ton.com.br/checkout/cart/?productId=TONPRO_TIER_NOV24_D195&referrer=19D2F868-A433-44F2-9745-1A366B6C66B0&userAnticipation=0&userTag=tonpro_tier_nov24&utm_medium=invite_share&utm_source=revendedor" target="_blank"><button class="compra">PEDIR T2 PRO</button></a>
         
         <ul>
            
@@ -244,7 +264,7 @@
         <h4>frete gratis em todo brasil,
             <i class="material-symbols-outlined">delivery_truck_bolt</i>
         </h4>
-        <button class="compra">PEDIR T1 PRO</button>
+        <a href="https://ton.com.br/checkout/cart/?productId=TONPRO_TIER_NOV24_D150&referrer=19D2F868-A433-44F2-9745-1A366B6C66B0&userAnticipation=0&userTag=tonpro_tier_nov24&utm_medium=invite_share&utm_source=revendedor" target="_blank"><button class="compra">PEDIR T1 PRO</button></a>
         
         <ul>
            
@@ -290,6 +310,7 @@
 </article>
 
  
+<p id="taxa">TAXA 0 NO PIX QR CODE POR 30 DIAS, POIS VOCE ESTA USANDO O CODIGO PROMOCIONAL "VITORBRITO10" TAMBEM DISPONIVEL NOS OUTROS SITES</p>
 
           
             
@@ -374,7 +395,13 @@
         </tr>
     </tbody>
 </table>
+<footer>
+    <div><img class="logo" src="imagens/on-logo.png" alt="logo ton"></div>
+    <p>todos os direitos reservados ao programa oficial de parceiros Ton</p>
+</footer>
+
 <script>
+   
     function scrollIntoSection() {
         const artflex = document.getElementById('artflex');
         artflex.scrollIntoView ({behavior: 'smooth'});
@@ -430,6 +457,12 @@
         }
 
     }
+
+    window.addEventListener('beforeunload', function(event) {
+  var confirmationMessage = 'Tem certeza que deseja sair? pode acessar seu desconto tambem no site oficial da TON usando "VITORBRITO10" como cumpom, APROVEITE!';
+  event.returnValue = confirmationMessage; // Chrome, Firefox, Opera, Safari
+  return confirmationMessage; // IE-11 and earlier
+});
 </script>
 </body>
 </html>

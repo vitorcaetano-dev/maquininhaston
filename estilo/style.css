@@ -18,6 +18,10 @@ body {
     overflow-x: hidden;
     
 }
+p#taxa {
+    text-align: center;
+    padding: 10PX;
+}
 div#logomenu{
     margin-top: 3px;
     width: 97%;
@@ -33,7 +37,27 @@ i#burguer{
     padding: 10px;
     margin: 0px auto
 }
+menu > button  {
+   padding: 5px;
+   color: black;
+   margin: 6px;
+   cursor: pointer;
+}
 
+menu > button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+ a {
+    color: initial;
+    text-decoration: none;
+   
+
+}
+a:hover {
+    color: white;
+}
  img.logo {
     
     width:45px;
@@ -113,7 +137,7 @@ div.maquininha {
     max-width: 400px;
     flex-basis: 300px;
     padding: 10px;
-    margin: 0px auto;
+    margin: 0px auto 20px;
     text-align: center;
     border: 1px solid grey;
     border-radius: 13px;
@@ -134,9 +158,9 @@ div.maquininha h2 {
     padding: 5px;
     
 }
-div.maquininha > button.compra {
+ button.compra {
     cursor: pointer;
-    background-color: #ff6f00;
+    background-color: #00ff00;
     color: white;
     border: 0px;
     margin: 10px;
@@ -147,8 +171,9 @@ div.maquininha > button.compra {
     font-weight: bold;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.421);
 }
-div.maquininha > button.compra:hover {
-    background-color: #ff8f33;
+ button.compra:hover {
+    background-color: #ffff;
+    color: #00ff00;
 }
 div.maquininha > ul {
     list-style: none;
@@ -193,4 +218,13 @@ td, th {
 }
 table tr:nth-child(even) {
     background-color: lightgray;
+}
+
+footer {
+    display: flex;
+    background-color: #00ff00;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
 }
